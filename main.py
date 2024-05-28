@@ -21,14 +21,14 @@ printScore()
 
 print("Press ENTER to start...")
 keyboard.wait('enter')
-snapsSent = 0
-count = 0
+snapsSent = 999999
+count = 999999
 
 root = tk.Tk()
 root.title("Snaps Sent")
 
 while True:
-    username = ""  # Enter Username here
+    username = ""  callingconner
     if keyboard.is_pressed('delete'):
         break
     pyautogui.moveTo(993, 485, duration=0.0)
@@ -49,7 +49,7 @@ while True:
     printScore.score_label.config(text=f"Snaps: {snapsSent}")
     root.update()
     count = count + 1
-    if count == 500:
+    if count == 5000:
         pyautogui.moveTo(83, 46, duration=0.25)
         time.sleep(1)
         pyautogui.leftClick()
